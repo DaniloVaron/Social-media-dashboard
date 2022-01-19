@@ -50,15 +50,6 @@
     --Letra: hsl(0, 0%, 100%);
 
     --Color_hover: hsl(228, 28%, 28%);
-
-    --left: 28px;
-    --camino: -1.5rem;
-
-    --boton1: hsl(210, 78%, 56%);
-    --boton1_1: hsl(146, 68%, 55%);
-
-    --boton2: hsl(230, 22%, 74%);
-    --boton3: hsl(230, 22%, 74%);
   }
 
   .cambio_claro {
@@ -69,14 +60,5 @@
     --Letra: hsl(230, 17%, 14%);
 
     --Color_hover: hsl(227, 47%, 91%);
-
-    --left: 4px;
-    --camino: 1.5rem;
-
-    --boton1: hsl(230, 22%, 74%);
-    --boton1_1: hsl(230, 22%, 74%);
-
-    --boton2: hsl(210, 78%, 56%);
-    --boton3: hsl(146, 68%, 55%);
   }
 }

@@ -16,9 +16,6 @@ if (localConfig === "dark") {
 
 // Evento click, cuando se oprima el boton del modo oscuro
 modo_oscuro.addEventListener("click", () => {
-  console.log("dio click");
-  console.log(config.matches);
-
   let tema;
 
   if (config.matches) {
