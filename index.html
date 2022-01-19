@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+
+  <!-- Mis estilos -->
+  <!-- Variables -->
+  <link rel="stylesheet" href="./css/variables.css">
+
+  <!-- Modo Oscuro -->
+  <link rel="stylesheet" href="./css/mode.css">
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+  <!-- Media Query -->
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body class="color">
+
+  <!-- Cabecera -->
+  <header class="cabecera"></header>
+
+  <!-- Contenedor -->
+  <main class="container">
+
+    <!-- Cabecera del contenedor -->
+    <div class="container_cabecera">
+      <div class="cabecera_espacio">
+        <h2 class="cabecera_titulo">Social Media Dashboard</h2>
+        <p class="cabecera_texto">Total Followers: 23,004</p>
+      </div>
+
+      <hr>
+
+      <div class="cabecera_cambio">
+        <p class="cambio_texto">Dark Mode</p>
+        <label class="cambio_interruptor">
+          <input type="checkbox" id="cambio_id" class="dark_mode" unchecked>
+          <span class="slider circulo"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Datos generales -->
+    <div class="general">
+      <article class="datos_generales">
+        <div class="general_barra barra1"></div>
+
+        <div class="general_social">
+          <img src="./images/icon-facebook.svg" alt="facebook">
+          <p> @nathanf</p>
+        </div>
+
+        <h3 class="general_numero">1987</h3>
+        <p class="general_follow">Followers</p>
+        <div class="general_dia">
+          <img src="./images/icon-up.svg" alt="flecha up arriba">
+          <p class="dia_color verde">12 Today</p>
+        </div>
+      </article>
+
+      <article class="datos_generales ">
+        <div class="general_barra barra2"></div>
+
+        <div class="general_social">
+          <img src="./images/icon-twitter.svg" alt="twitter">
+          <p> @nathanf</p>
+        </div>
+
+        <h3 class="general_numero">1044</h3>
+        <p class="general_follow">Followers</p>
+        <div class="general_dia">
+          <img src="./images/icon-up.svg" alt="flecha up arriba">
+          <p class="dia_color verde">99 Today</p>
+        </div>
+      </article>
+
+      <article class="datos_generales">
+        <div class="general_barra barra3"></div>
+
+        <div class="general_social">
+          <img src="./images/icon-instagram.svg" alt="instagram">
+          <p> @realnathanf</p>
+        </div>
+
+        <h3 class="general_numero">11k</h3>
+        <p class="general_follow">Followers</p>
+        <div class="general_dia">
+          <img src="./images/icon-up.svg" alt="flecha up arriba">
+          <p class="dia_color verde">1099 Today</p>
+        </div>
+      </article>
+
+      <article class="datos_generales dato4">
+        <div class="general_barra barra4"></div>
+
+        <div class="general_social">
+          <img src="./images/icon-youtube.svg" alt="youtube">
+          <p> Nathan F.</p>
+        </div>
+
+        <h3 class="general_numero">8239</h3>
+        <p class="general_follow">Subscribers</p>
+        <div class="general_dia">
+          <img src="./images/icon-down.svg" alt="flecha down abajo">
+          <p class="dia_color rojo">144 Today</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Titulo de hoy -->
+    <h2 class="titulo_diario">Overview - Today</h2>
+
+    <!-- Datos diarios -->
+    <div class="diario">
+
+      <!-- Tarjeta diaria 1 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>87</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-up.svg" alt="flecha up arriba">
+            <p class="texto verde">3%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 2 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Likes</p>
+          <img src="./images/icon-facebook.svg" alt="facebook">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>52</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-down.svg" alt="flecha down abajo">
+            <p class="texto rojo">2%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 3 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Likes</p>
+          <img src="./images/icon-instagram.svg" alt="twitter">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>5462</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-up.svg" alt="flecha up arriba">
+            <p class="texto verde">2257%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 4 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="twitter">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>52k</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-up.svg" alt="flecha up arriba">
+            <p class="texto verde">1375%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 5 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="instagram">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>117</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-up.svg" alt="flecha up arriba">
+            <p class="texto verde">303%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 6 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Likes</p>
+          <img src="./images/icon-twitter.svg" alt="instagram">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>507</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-up.svg" alt="flecha up arriba">
+            <p class="texto verde">553%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 7 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Likes</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>107</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-down.svg" alt="flecha down abajo">
+            <p class="texto rojo">19%</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta diaria 8 -->
+      <article class="datos_diarios">
+
+        <!-- Parte social de la tarjeta -->
+        <div class="diario_social">
+          <p>Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="youtube">
+        </div>
+
+        <!-- Estadistica de la tarjeta -->
+        <div class="diario_estadistica">
+          <h4>1407</h4>
+          <div class="estadistica_texto">
+            <img src="./images/icon-down.svg" alt="flecha down abajo">
+            <p class="texto rojo">12%</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <!-- Otro -->
+  <div class="attribution">
+    Desafío por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Codificado por <a href="https://github.com/DaniloVaron" target="_blank">Danilo Varon</a>.
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

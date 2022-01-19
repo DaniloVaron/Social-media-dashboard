@@ -1,0 +1,353 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Color_Cuerpo);
+  color: var(--Letra);
+}
+
+/* Cabecera */
+.cabecera {
+  height: 38vh;
+  width: 100%;
+  border-radius: 0 0 2rem 2rem;
+  position: absolute;
+  background-color: var(--Color_Cabecera);
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Contenedor */
+.container {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 80%;
+  position: relative;
+  top: 2.5rem;
+  display: grid;
+  justify-content: center;
+  /* background-color: brown; */
+}
+
+/* ----------------------------------------------------------------------------- */
+
+hr {
+  display: none;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Textos de la cabecera */
+.container_cabecera {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+/* Titulo */
+.cabecera_titulo {
+  margin: 0;
+}
+
+/* Texto */
+.cabecera_texto {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--Color_Texto);
+}
+
+/* Dark mode */
+.cabecera_cambio {
+  align-self: center;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+/* Texto dark mode */
+.cambio_texto {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--Color_Texto);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Interruptor */
+.cambio_interruptor {
+  width: 50px;
+  height: 25px;
+  transform: rotate(180deg);
+  margin-left: 0.5rem;
+}
+
+.cambio_interruptor input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s;
+
+  /* background-color: var(--boton1); */
+  background-image: linear-gradient(to left, var(--boton1), var(--boton1_1));
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  bottom: 3px;
+  transition: 0.4s;
+
+  left: var(--left);
+  background-color: var(--Color_Cabecera);
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(to left, var(--boton2), var(--boton3));
+}
+
+input:checked + .slider:before {
+  transform: translateX(var(--camino));
+  background-color: var(--Color_Cabecera);
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* .slider1 {
+  background-color: var(--boton1);
+}
+
+input:checked + .slider1 {
+  background-image: linear-gradient(to left, var(--boton2), var(--boton3));
+}
+
+.slider2 {
+  background-image: linear-gradient(to left, var(--boton2), var(--boton3));
+}
+
+input:checked + .slider2 {
+  background-image: var(--boton1);
+} */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+
+.circulo {
+  border-radius: 2.1rem;
+}
+
+.circulo:before {
+  border-radius: 50%;
+}
+/* ----------------------------------------------------------------------------- */
+
+/* Datos generales superiores */
+.general {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 15rem));
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+/* Cada datos general */
+.datos_generales {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--Color_Tarjeta);
+}
+
+/* Hover de cada datos general */
+.datos_generales:hover {
+  background-color: var(--Color_hover);
+}
+
+.general_barra {
+  height: 0.2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.barra1 {
+  /* Cambio */
+  background-color: var(--Facebook);
+}
+.barra2 {
+  /* Cambio */
+  background-color: var(--Twitter);
+}
+.barra3 {
+  /* Cambio */
+  background-image: linear-gradient(
+    to right,
+    var(--Instagram1),
+    var(--Instagram2)
+  );
+}
+.barra4 {
+  /* Cambio */
+  background-color: var(--Youtube);
+}
+
+.general_social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.general_social p {
+  margin: 0;
+  margin-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  /* Posible cambio */
+  color: var(--Color_Texto);
+}
+
+.general_numero {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.general_follow {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--Color_Texto);
+}
+
+.general_dia {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.dia_color {
+  margin: 0;
+  margin-left: 0.3rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.verde {
+  color: var(--Verde_lima);
+}
+
+.rojo {
+  color: var(--Rojo_brillante);
+}
+/* ------------------------------------------------------------------------------------ */
+
+/* Titulo de hoy */
+.titulo_diario {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: var(--Color_Texto);
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Datos diarios */
+.diario {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 15rem));
+  gap: 1rem;
+}
+
+/* Cada dato diario */
+.datos_diarios {
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color: var(--Color_Tarjeta);
+}
+
+/* Hover de cada datos general */
+.datos_diarios:hover {
+  background-color: var(--Color_hover);
+}
+
+/* Parte social de la tarjeta diaria */
+.diario_social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 1.5rem;
+}
+
+/* parrafo de la parte social */
+.diario_social p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--Color_Texto);
+}
+
+/* Estadistica de la tarjeta diaria */
+.diario_estadistica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* h4 de la parte estadistica */
+.diario_estadistica h4 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Texto de estadistica */
+.estadistica_texto {
+  display: flex;
+  align-items: center;
+}
+
+/* Parrafo de la parte estadistica */
+.texto {
+  margin: 0;
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Otro */
+.attribution {
+  /* margin-top: 1rem; */
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 2.5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
