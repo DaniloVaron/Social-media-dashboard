@@ -107,7 +107,6 @@ hr {
   bottom: 0;
   transition: 0.4s;
 
-  /* background-color: var(--boton1); */
   background-image: linear-gradient(to left, var(--boton1), var(--boton1_1));
 }
 
@@ -131,26 +130,6 @@ input:checked + .slider:before {
   transform: translateX(var(--camino));
   background-color: var(--Color_Cabecera);
 }
-
-/* ------------------------------------------------------------------------------------------ */
-
-/* .slider1 {
-  background-color: var(--boton1);
-}
-
-input:checked + .slider1 {
-  background-image: linear-gradient(to left, var(--boton2), var(--boton3));
-}
-
-.slider2 {
-  background-image: linear-gradient(to left, var(--boton2), var(--boton3));
-}
-
-input:checked + .slider2 {
-  background-image: var(--boton1);
-} */
-
-/* ------------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------------ */
 
