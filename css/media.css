@@ -50,7 +50,7 @@
     margin: 0;
     border: 0;
 
-    background-color: var(--Oscuro_Texto);
+    background-color: var(--Color_Texto);
   }
 
   .cabecera_espacio {
